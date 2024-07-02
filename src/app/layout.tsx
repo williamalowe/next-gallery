@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Container from "@/components/container";
 import Header from "@/components/header";
+import Sidebar from "@/components/sidebar"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-zinc-100 text-zinc-900 min-h-screen`}>
         <Container>
           <Header />
+          <Sidebar />
           {children}
         </Container>
       </body>
