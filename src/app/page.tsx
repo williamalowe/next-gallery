@@ -15,8 +15,8 @@ export default function Home() {
             className="w-[300px] h-[300px] object-cover grayscale rounded-full scale-x-[-1]"
               src="/profile-removebg.png"
               alt="profile picture"
-              width="300"
-              height="300"
+              width={300}
+              height={300}
           />
         </div>
       </div>

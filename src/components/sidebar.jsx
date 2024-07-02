@@ -56,8 +56,8 @@ export default function Sidebar() {
               className="w-[128px] h-[128px] object-cover rounded-full"
               src="/profile.jpg"
               alt="profile picture"
-              width="128"
-              height="128"
+              width={128}
+              height={128}
             />
             <h3 className="text-2xl font-bold mt-4 italic">William Lowe</h3>
             <h5 className="">Photographer/Designer</h5>
