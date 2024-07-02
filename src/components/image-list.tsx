@@ -49,7 +49,7 @@ export default function ImageList() {
           return (
             <Link key={img.id} href={`/gallery/${img.id}`}>
             <Image 
-              className="w-[300px] h-[300px]"
+              className="w-[300px] h-[300px] rounded"
               src={img.src}
               alt={`image ${img.id}`}
               width={300}
