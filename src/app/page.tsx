@@ -17,6 +17,7 @@ export default function Home() {
               alt="profile picture"
               width={300}
               height={300}
+              priority={true}
           />
         </div>
       </div>
