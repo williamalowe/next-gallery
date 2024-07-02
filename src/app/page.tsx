@@ -8,6 +8,7 @@ export default function Home() {
         <div>
           <p>Hi, I&apos;m</p>
           <h1 className="text-4xl font-bold">William Lowe</h1>
+          <p>Freelance Photographer/Artist</p>
         </div>
         <div>
           <Image 
