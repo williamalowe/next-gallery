@@ -59,8 +59,8 @@ export default function Sidebar() {
               width={128}
               height={128}
             />
-            <h3 className="text-2xl font-bold mt-4 italic">William Lowe</h3>
-            <h5 className="">Photographer/Designer</h5>
+            <h3 className="text-2xl font-bold mt-4">William Lowe</h3>
+            <h5 className="italic">Photographer/Designer</h5>
             <p className="text-sm mx-2 mt-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium doloremque, architecto cupiditate cumque esse ullam

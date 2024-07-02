@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="border-y p-4 flex items-center">
       <Link href="/">
-        <div className="bg-zinc-900 w-12 h-12 text-white flex items-center justify-center text-2xl font-bold rounded-md">
+        <div className="bg-zinc-900 w-12 h-12 text-white flex items-center justify-center text-2xl font-bold rounded">
           WL
         </div>
       </Link>

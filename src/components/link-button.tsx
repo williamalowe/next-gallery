@@ -15,7 +15,7 @@ export default function LinkButton({
   return (
     <Link href={href}>
       <motion.div
-        className="w-[148px] flex gap-x-2 items-center p-2 bg-zinc-900 text-white font-bold rounded-md"
+        className="w-[148px] flex gap-x-2 items-center p-2 bg-zinc-900 text-white font-bold rounded"
         whileHover={{
           scale: 1.1,
         }}

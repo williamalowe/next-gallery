@@ -10,8 +10,8 @@ export default function page({ params } : {
         src={`/images/${params.id}.jpg`}
         alt={`image ${params.id}`}
         className='h-auto w-auto'
-        width='800'
-        height='800'
+        width={800}
+        height={800}
       />
     </main>
   )
