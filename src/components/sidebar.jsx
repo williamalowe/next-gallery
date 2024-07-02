@@ -36,6 +36,11 @@ export default function Sidebar() {
       href: "https://www.linkedin.com",
     },
   ];
+  const socialIcon = {
+    hovered: {
+      y: -6
+    }
+  }
   return (
     <div>
       <AnimatePresence>
@@ -71,29 +76,52 @@ export default function Sidebar() {
               {socialLinks.map((link) => {
                 return (
                   <li key={link.href}>
-                    <a href={link.href} target="_blank">
+                    <motion.a href={link.href} target="_blank" whileHover='hovered'>
+                      <motion.div variants={socialIcon}>
                       <FontAwesomeIcon icon={link.icon} />
-                    </a>
+                      </motion.div>
+                    </motion.a>
                   </li>
                 );
               })}
             </ul>
-            <button
+            <motion.button
               className="absolute top-2 right-4"
+              whileHover={{
+                scale: 1.2
+              }}
               onClick={() => setVisible(false)}
+
             >
               <FontAwesomeIcon icon={faX} />
-            </button>
+            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>
       {!visible && (
-        <button
+        <motion.button
           className="fixed left-4 top-[50%]"
+          whileHover={{
+            scale: 1.2
+          }}
           onClick={() => setVisible(true)}
         >
+          <motion.div
+            initial={{
+              x: 0
+            }}
+            animate={{
+              x: 6
+            }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: 'reverse'
+            }}
+          >
           <FontAwesomeIcon icon={faCaretRight} />
-        </button>
+          </motion.div>
+        </motion.button>
       )}
     </div>
   );
