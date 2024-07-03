@@ -1,17 +1,17 @@
+import Modal from "@/components/modal";
 import Image from "next/image";
-import React from "react";
 
-export default function page({ params }: { params: { id: string } }) {
+export default function ImageModal({ params }: { params: { id: string } }) {
   return (
-    <main className="p-8 px-5 flex justify-center items-center">
+    <Modal>
       <Image
         src={`/images/${params.id}.jpg`}
         alt={`image ${params.id}`}
-        className="h-auto w-auto"
+        className="max-h-[90vh] w-auto"
         width={800}
         height={800}
         priority={true}
       />
-    </main>
+    </Modal>
   );
 }
